@@ -11,6 +11,7 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Humpty parent POM</name>
+  <description>Parent POM for humpty projects</description>
   <url>http://mewf.co/humpty</url>
   <licenses>
     <license>
@@ -19,8 +20,17 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  <developers>
+    <developer>
+      <id>moandji.ezana</id>
+      <name>Moandji Ezana</name>
+      <email>mwanji@gmail.com</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
   <properties>
-    <humpty.version>1.0.0-SNAPSHOT</humpty.version>
     <mewf.repo>scm:git:git@github.com:mewf</mewf.repo>
     <mewf.github.url>https://github.com/mewf</mewf.github.url>
   </properties>
@@ -106,5 +116,4 @@
       </build>
     </profile>
   </profiles>
-  <description>Parent POM for humpty projects</description>
 </project>
