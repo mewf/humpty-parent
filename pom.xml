@@ -7,7 +7,7 @@
   </parent>
   <groupId>co.mewf.humpty</groupId>
   <artifactId>humpty-parent</artifactId>
-  <version>0.2.0</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Humpty parent POM</name>
   <description>Parent POM for humpty projects</description>
