@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.sonatype.oss</groupId>
@@ -30,8 +31,8 @@
     </developer>
   </developers>
   <properties>
-    <mewf.repo>scm:git:git@github.com:mewf</mewf.repo>
-    <mewf.github.url>https://github.com/mewf</mewf.github.url>
+    <mewf.repo>scm:git:git@github.com:mwanji</mewf.repo>
+    <mewf.github.url>https://github.com/mwanji</mewf.github.url>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -97,9 +98,20 @@
           <version>1.6.5</version>
           <extensions>true</extensions>
           <configuration>
-            <serverId>ossrh</serverId>
+            <serverId>sonatype-nexus-staging</serverId>
             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
             <autoReleaseAfterClose>true</autoReleaseAfterClose>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.1</version>
+          <configuration>
+            <autoVersionSubmodules>true</autoVersionSubmodules>
+            <useReleaseProfile>false</useReleaseProfile>
+            <releaseProfiles>release</releaseProfiles>
+            <goals>deploy</goals>
           </configuration>
         </plugin>
       </plugins>
