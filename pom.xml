@@ -30,8 +30,8 @@
     </developer>
   </developers>
   <properties>
-    <mewf.repo>scm:git:git@github.com:mwanji</mewf.repo>
-    <mewf.github.url>https://github.com/mwanji</mewf.github.url>
+    <github.repo>scm:git:git@github.com:mwanji</github.repo>
+    <github.url>https://github.com/mwanji</github.url>
   </properties>
   <dependencyManagement>
     <dependencies>
