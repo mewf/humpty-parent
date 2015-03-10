@@ -76,14 +76,14 @@
     </dependencies>
   </dependencyManagement>
   <scm>
-    <connection>${mewf.repo}/${project.artifactId}.git</connection>
-    <developerConnection>${mewf.repo}/${project.artifactId}.git</developerConnection>
-    <url>${mewf.github.url}/${project.artifactId}</url>
+    <connection>${github.repo}/${project.artifactId}.git</connection>
+    <developerConnection>${github.repo}/${project.artifactId}.git</developerConnection>
+    <url>${github.url}/${project.artifactId}</url>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>Github Issues</system>
-    <url>${mewf.github.url}/${project.artifactId}/issues</url>
+    <url>${github.url}/${project.artifactId}/issues</url>
   </issueManagement>
   <build>
     <pluginManagement>
